@@ -23,7 +23,6 @@ const FeaturedProducts = ({ doesShow }) => {
     return stars
   }
 
-  // const featuredStyle = { width: '100%', 'margin-top': '80px' }
   const featuredStyle = {
     width: '100%',
     marginTop: '80px',
@@ -34,16 +33,22 @@ const FeaturedProducts = ({ doesShow }) => {
     marginTop: doesShow ? '1.5rem' : '90px',
   }
 
+  const linkStyle = {
+    textDecoration: 'none', // Remove text decoration
+    color: 'inherit', // Use the default text color
+  }
+
   return (
     <Container>
       <Row>
         <h2 style={featuredStyle}>Featured Products</h2>{' '}
-        {/* Add margin top only */}
       </Row>
       <Row style={rowStyle}>
         {products.map((product) => (
           <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
-            <Link to={'/details/1'}>
+            <Link to={'/details/1'} style={linkStyle}>
+              {' '}
+              {/* Apply style here */}
               <Card className='mb-3'>
                 <Card.Img
                   variant='top'
@@ -162,5 +167,4 @@ const products = [
     rating: 4,
   },
 ]
-
 export default FeaturedProducts

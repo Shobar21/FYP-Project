@@ -75,13 +75,28 @@ function HomePage() {
         <Container className='fixed-container'>
           <div className='row'>
             <div className='col-md-6'>
-              <h1>Raining Offers For Hot Summer!</h1>
-              <p>25% Off On All Products</p>
+              <h1>
+                Raining Offers For
+                <br /> Hot Summer!
+              </h1>
+              <h3>25% Off On All Products</h3>
               <div>
-                <Button variant='light' className='mx-2'>
+                <Button
+                  variant='light'
+                  className='mx-2'
+                  style={{ marginTop: '20px' }}
+                >
                   Shop Now
                 </Button>
-                <Button variant='secondary' className='mx-2'>
+                <Button
+                  variant='secondary'
+                  className='mx-2'
+                  style={{
+                    border: '1px solid white',
+                    background: 'transparent',
+                    marginTop: '20px', // Add margin-top
+                  }}
+                >
                   Find More
                 </Button>
               </div>

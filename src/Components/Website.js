@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import logo1 from '../img/shophive.webp'
 import logo2 from '../img/mega.jpg'
-import logo3 from '../img/ishopping.png'
+import logo3 from '../img/priceoye-logo.png'
 import logo4 from '../img/ishopping.png'
 import logo5 from '../img/Vmart.webp'
 
