@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AllProducts from './Pages/AllProducts'
 import Details from './Pages/Details'
 import AboutUs from './Pages/AboutUs'
+import ContactUs from './Pages/ContactUs'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route element={<AllProducts />} path='/Allproducts' />
         <Route element={<Details />} path='/details/:id' />
         <Route element={<AboutUs />} path='/about' />
+        <Route element={<ContactUs />} path='/contact' />
       </Routes>
     </Router>
   )
