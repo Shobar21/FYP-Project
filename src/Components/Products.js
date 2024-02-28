@@ -38,7 +38,6 @@ const FeaturedProducts = ({ doesShow }) => {
     getData();
   }, []);
 
-  // const featuredStyle = { width: '100%', 'margin-top': '80px' }
   const featuredStyle = {
     width: "100%",
     marginTop: "80px",
@@ -51,16 +50,22 @@ const FeaturedProducts = ({ doesShow }) => {
 
   if (!products) return null;
 
+  const linkStyle = {
+    textDecoration: 'none', // Remove text decoration
+    color: 'inherit', // Use the default text color
+  }
+
   return (
     <Container>
       <Row>
-        <h2 style={featuredStyle}>Featured Products</h2>{" "}
-        {/* Add margin top only */}
+        <h2 style={featuredStyle}>Featured Products</h2>{' '}
       </Row>
       <Row style={rowStyle}>
         {products.map((product) => (
-          <Col key={product._id} xs={12} sm={6} md={4} lg={3}>
-            <Link to={product._id}>
+          <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+            <Link to={'/details/1'} style={linkStyle}>
+              {' '}
+              {/* Apply style here */}
               <Card className='mb-3'>
                 <img src={product.images[0]} alt='Product'></img>
                 {/* <Card.Img

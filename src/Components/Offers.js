@@ -11,32 +11,47 @@ const SpecialOffer = () => {
     width: '100vw',
     height: '100vh',
     color: 'white',
-    marginTop: ' 80px',
+    marginTop: '80px',
   }
 
   return (
     <div style={containerStyle}>
       <Container>
-        <Row>
+        <Row className='align-items-center'>
+          {' '}
+          {/* Align items vertically */}
           <Col md={6}>
             <div style={{ padding: '20px', margin: '20px' }}>
-              {' '}
-              <div style={{ fontSize: '24px', fontWeight: 'bold' }}>
+              <h2 style={{ fontSize: '32px', fontWeight: 'bold' }}>
+                {' '}
+                {/* Increased font size of h1 to 32px */}
                 Limited Time Offer
-              </div>
-              <div style={{ fontSize: '18px', marginTop: '10px' }}>
+              </h2>
+              <h1 style={{ fontSize: '24px', marginTop: '10px' }}>
+                {' '}
+                {/* Increased font size of h3 to 24px */}
                 Special Edition
-              </div>
-              <div style={{ marginTop: '20px' }}>
+              </h1>
+              <div style={{ marginTop: '20px', fontSize: '18px' }}>
+                {' '}
+                {/* Increased font size to 18px */}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </div>
-              <div style={{ marginTop: '20px' }}>
-                Buy This T-shirt At 20% Discount, Use Code{' '}
-                <strong>OFF20</strong>
+              <div style={{ marginTop: '20px', fontSize: '18px' }}>
+                {' '}
+                {/* Increased font size to 18px */}
+                <h4>
+                  Buy This T-shirt At 20% Discount, Use Code{' '}
+                  <strong>OFF20</strong>
+                </h4>
               </div>
             </div>
-            <Button variant='light'>Shop Now</Button>
+            <Col md={6} className='d-flex justify-content-center'>
+              {' '}
+              {/* Center the button */}
+              <Button variant='light'>Shop Now</Button>
+            </Col>
           </Col>
         </Row>
       </Container>
