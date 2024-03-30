@@ -48,7 +48,6 @@ const FeaturedProducts = ({ doesShow }) => {
           <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
             <Link to={'/details/1'} style={linkStyle}>
               {' '}
-              {/* Apply style here */}
               <Card className='mb-3'>
                 <Card.Img
                   variant='top'

@@ -130,3 +130,7 @@
 .custom-blue {
   color: rgb(41, 139, 196);
 }
+
+.rating-starts {
+  font-size: 15px;
+}
