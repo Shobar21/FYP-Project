@@ -9,9 +9,9 @@
   color: #fff;
 }
 .navbar-brand .logo-image {
-  width: 50px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Optional: Adjust margin to align with text */
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .navbar-bg {

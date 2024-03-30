@@ -1,5 +1,5 @@
 import React from 'react'
-import imagePath from '../../img/banner-04.jpg'
+import imagePath from '../../img/slide-image-free-img.jpg'
 
 const WhoWeAre = () => {
   return (

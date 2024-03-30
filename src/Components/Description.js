@@ -9,13 +9,15 @@ function Details() {
 
   const fetchData = async () => {
     setTimeout(() => {
-      // Mock data
       const mockData = {
+        id: '1',
+        product_url: 'url',
         title: 'Product Title',
         price: 100,
         spec: 'Product Specifications',
         desc: 'Product Description',
         link: 'https://example.com',
+        stock: 'In Stock',
       }
       setData(mockData)
     }, 1000) // Simulating a delay of 1 second

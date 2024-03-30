@@ -12,7 +12,7 @@ const AboutUs = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             height: '80vh',
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)', // Adjusted background transparency
             color: 'white',
             boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)',
           }}
