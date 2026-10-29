@@ -17,7 +17,7 @@ Smart Buy is an e-commerce website that allows users to compare products from di
 
 ## How to Run the Project
 
--**npm install
--**npm run dev
+- **npm install
+- **npm run dev
 
 
